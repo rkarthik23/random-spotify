@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Spotify</title>
+</head>
+
+<body>
+
+  <p>Opening a random song...</p>
+
+  <script>
+    const songs = [
+      "https://open.spotify.com/track/7xemBaUtcXqhHbNQU9zGcM?si=5cc9f54ddffd49c4",
+      "https://open.spotify.com/track/5hffP5gJFe1zByXf7BIeYq?si=50f6d174f7704e09",
+      "https://open.spotify.com/track/54DDsisxRqAu7ua1U27jIS?si=f3bd866e5d5e4b6f",
+      "https://open.spotify.com/track/37l31PrCNsg8baUjarNAi9?si=6fa7af847dd244fa",
+      "https://open.spotify.com/track/02wNtFxlr9dLmZXKT5TIF5?si=113eed0ba7c64c02",
+      "https://open.spotify.com/track/1yYlpGuBiRRf33e1gY61bN?si=6a564e5e79744466",
+      "https://open.spotify.com/track/69qEkklMttKtqgSWqJnlJa?si=afa123321324483f",
+      "https://open.spotify.com/track/7kzKAuUzOITUauHAhoMoxA?si=73f9bd425808492b",
+      "https://open.spotify.com/track/6BjDS1tNSBjposp5j9a3g4?si=9bfe18397ec24c7b",
+      "https://open.spotify.com/track/2KU7CB4GA26r0VQ47Lvf9i?si=ec4d6e90aa794c4e",
+      "https://open.spotify.com/track/1W7023CuJrWPbD4q2Sipoh?si=fe5c31d54ced4f9e",
+      "https://open.spotify.com/track/2AjTT2CBthpsIQtyxzhSr4?si=db3d69dee0e24189",
+      "https://open.spotify.com/track/29zBBIorhbyq5OePFv7SAq?si=bdeecee086f5458c"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * songs.length);
+    const randomSong = songs[randomIndex];
+
+    window.location.replace(randomSong);
+  </script>
+
+</body>
+</html>
